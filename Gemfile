@@ -56,6 +56,12 @@ gem "font-awesome-sass", "~> 6.1"
 # Simple fform
 gem "simple_form", github: "heartcombo/simple_form"
 
+# Rest Client
+gem "rest-client"
+
+# faker gem
+gem 'faker'
+
 # **********************************
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]

@@ -1,0 +1,9 @@
+<div class="banner"><h1>Your Lists</h1></div>
+
+<div class="container">
+  <div class="wrapper">
+    <% @lists.each do |list| %>
+      <%= link_to "#{list.name}", "lists/#{list.id}", class:"list-card", style:"background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(#{list.card_banner(list.name)})" %>
+    <% end %>
+  </div>
+</div>

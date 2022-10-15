@@ -10,3 +10,18 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  background-color: #F5F5F5;
+}
+
+.banner {
+  align-content: center;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 80px;
+  text-shadow: 2px 2px black;
+  margin: none;
+}
