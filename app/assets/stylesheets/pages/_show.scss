@@ -1,0 +1,13 @@
+.film-box {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+
+.movie-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
