@@ -2,7 +2,12 @@
   <h1><%= @list.name %></h1>
 
   <h3>Movies in this list</h3>
-  <%= Bookmark.find_by(list: @list, movie: movie) %>
 
+  <% @list.movies.each do |movie| %>
+    <%= movie.title %>
+    <br>
+  <% end %>
+
+  <br>
   <%= link_to "Add a new movie", new_list_bookmark_path(@list), class:"btn btn-outline-danger" %>
 </div>
