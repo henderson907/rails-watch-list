@@ -1,0 +1,17 @@
+<div class="container">
+  <h1 class="d-flex justify-content-center mt-5 mb-4">Bookmark a movie</h1>
+
+  <div class="row">
+    <div class="col-12">
+      <div class="d-flex justify-content-center">
+        <div class="col-6 form">
+          <%= simple_form_for [@list, @bookmark]  do |f| %>
+            <%= f.input :comment %>
+            <%= f.association :movie, collection: Movie.all.order(:title), prompt: "Please choose a movie" %>
+            <%= f.button :submit, class: "btn btn-outline-danger" %>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
